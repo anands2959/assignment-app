@@ -1,7 +1,7 @@
 
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
+import { CardStyleInterpolators, createStackNavigator } from '@react-navigation/stack';
 import * as ImagePicker from 'expo-image-picker';
 import { StatusBar } from "expo-status-bar";
 import { Animated, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
@@ -117,7 +117,7 @@ function MainTabNavigator() {
 export default function RootLayout() {
   return (
     <>
-      <StatusBar style="black" />
+      <StatusBar style="dark" translucent backgroundColor="transparent" />
       <Stack.Navigator
         initialRouteName="MainTabs"
         screenOptions={{
